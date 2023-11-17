@@ -236,7 +236,6 @@ h6 {
     color: #fff;
     font-size: 26px;
     font-family: "poppins" sans-serif;
-
 }
 #hero p span{
     padding-bottom: 4px;
@@ -261,6 +260,7 @@ h6 {
     }
 }
 /*==========selection Geral============ */
+
 section {
     padding: 60px 0;
     overflow: hidden;
@@ -309,8 +309,47 @@ section {
 }
 .about .content ul strong {
     margin-right: 10px;
+
+}
+.about .content ul i{
+    font-size: 16px;
     margin-right: 5px;
     color:#149ddd;
     line-height: 0;
+
 }
-    
+
+/*============Feitos===========*/
+.facts {
+    padding-bottom: 30px;
+}
+.facts .count-box{
+    padding: 30px;
+    width: 100%;
+}
+.facts .count-box i{
+    display: block;
+    font-size: 44px;
+    color: #149ddd;
+    float: left;
+    line-height: 0;
+}
+.facts .count-box span{
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: #040b14;
+    margin-left: 60px
+}
+.facts .count-box p{
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "raleway" sans-serif;
+    font-size: 14px;
+    color: #122f57;
+}
+
+.facts .count-box a:hover{
+    color: #2eafec;
+}
