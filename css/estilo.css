@@ -1,7 +1,7 @@
 /* CSS Geral */
 body {
     font-family: "Open Sans", sans-serif;
-    color: #fff;
+    color: #2b2b2b;
 }
 a {
     color: #149ddd;
@@ -173,6 +173,7 @@ h6 {
 .nav-menu li:hover>a i {
     color: #37b3ed;
 }
+
 /* mobile menu */
 .mobile-nav-toggle {
     position: fixed;
@@ -194,37 +195,38 @@ h6 {
     border-radius: 50px;
     cursor: pointer;
 }
-.mobile-nav-active {
+.mobile-nav-active{
     overflow: hidden;
 }
 .mobile-nav-active #header {
     left: 0;
 }
+
 /* 
------------- HERO-----------
+==========  HERO   ==============
 */
 #hero {
     width: 100%;
     height: 100vh;
     background: url("../img/hero-bg2.jpg") top center;
-    background-size: cover;
+    background-size: cover;        
 }
 #hero::before{
     content: "";
-    background: rgb(5, 13, 24, 0.3);
+    background: rgba(5, 13, 24, 0.3);
     position: absolute;
-    top: 0;
     bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1;
 }
-#hero .hero-conteniner {
+#hero .hero-container {
     position: relative;
     z-index: 2;
     min-width: 300px;
 }
-#hero h1 {
+#hero h1{
     margin: 0 0 10px 0;
     font-size: 64px;
     color: #fff;
@@ -235,7 +237,7 @@ h6 {
     margin-bottom: 50px;
     color: #fff;
     font-size: 26px;
-    font-family: "poppins" sans-serif;
+    font-family: "Poppins" sans-serif;
 }
 #hero p span{
     padding-bottom: 4px;
@@ -248,19 +250,18 @@ h6 {
         background-attachment: fixed;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
     #hero h1{
         font-size: 28px;
         line-height: 36px;
     }
-    #hero h2{
+    #hero h2 {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
     }
 }
-/*==========selection Geral============ */
-
+/*    Section Geral     */
 section {
     padding: 60px 0;
     overflow: hidden;
@@ -268,10 +269,10 @@ section {
 .section-bg{
     background: #f5f8fd;
 }
-.section-tittle{
+.section-title{
     padding-bottom: 30px;
 }
-.section-tittle h2{
+.section-title h2{
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -279,7 +280,7 @@ section {
     position: relative;
     color: #173b6c;
 }
-.section-tittle h2::after {
+.section-title h2::after {
     content: "";
     position: absolute;
     display: block;
@@ -289,10 +290,11 @@ section {
     bottom: 0;
     left: 0;
 }
-.section-tittle p{
+.section-title p {
     margin-bottom: 0;
 }
-/*========Sobre=======*/
+
+/*  Sobre   =========  */
 .about .content h3{
     font-weight: 700;
     font-size: 26px;
@@ -309,21 +311,19 @@ section {
 }
 .about .content ul strong {
     margin-right: 10px;
-
 }
-.about .content ul i{
+.about .content ul i {
     font-size: 16px;
     margin-right: 5px;
-    color:#149ddd;
+    color: #149ddd;
     line-height: 0;
-
 }
 
-/*============Feitos===========*/
+/* Feitos  */
 .facts {
     padding-bottom: 30px;
 }
-.facts .count-box{
+.facts .count-box {
     padding: 30px;
     width: 100%;
 }
@@ -340,16 +340,41 @@ section {
     display: block;
     font-weight: 700;
     color: #040b14;
-    margin-left: 60px
+    margin-left: 60px;
 }
 .facts .count-box p{
     padding: 15px 0 0 0;
     margin: 0 0 0 60px;
-    font-family: "raleway" sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     color: #122f57;
 }
-
+.facts .count-box a {
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    color: #122f57;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out 0.3s;
+}
 .facts .count-box a:hover{
     color: #2eafec;
+}
+
+/*  SKILLS */
+.skills .progress{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill{
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #040b14;
 }
